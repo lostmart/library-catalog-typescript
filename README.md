@@ -10,6 +10,40 @@ This Typescript modeule includes definitions for user roles, a user interface, a
 
 ## Usage
 
+### User Class
+
+```typescript
+class User implements IUser {
+	// Constructor to initialize the properties
+	constructor(
+		public firstName: string,
+		public age: number,
+		public admin: boolean,
+		public role: Rol
+	) {
+		this.firstName = firstName
+		this.age = age
+		this.admin = admin
+		this.role = role
+	}
+
+	// Getter method for firstName
+	getFirstName(): string {
+		return `Hey my name is ${this.firstName}`
+	}
+
+	// Getter method for role
+	getRole(): Rol {
+		return this.role
+	}
+
+	// Method to execute sayHello function
+	sayHello(): string {
+		return "hi how are you ?"
+	}
+}
+```
+
 ### Creating a User Instance
 
 To create a user instance, you need to provide the user's first name, age, admin status (boolean), and their role (as defined by the Rol enum).
