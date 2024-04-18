@@ -12,14 +12,47 @@ interface IUser {
 	firstName: string
 	age: number
 	admin: boolean
+	role: Rol
+	sayHello: () => string
 }
 
-let userOne: IUser
+// type TFirstName = string | null
 
-userOne = {
+// type TUser = {
+// 	firstName: string
+// 	age: number
+// 	admin: boolean
+// 	role: Rol
+// 	sayHello: Function
+// }
+
+// let userOne: IUser
+
+// enum
+
+enum Rol {
+	Cordinador = "Cordinador",
+	Profesor = "Profesor",
+}
+
+const userOne: IUser = {
 	firstName: "Bob",
 	age: 45,
 	admin: true,
+	role: Rol.Cordinador,
+	sayHello: function () {
+		return `Hello I am ${this.firstName} and I am a ${this.role}`
+	},
 }
 
-// arrays
+const userTwo: IUser = {
+	firstName: "Charlie",
+	age: 34,
+	admin: false,
+	role: Rol.Profesor,
+	sayHello: function () {
+		return `Hello I am ${this.firstName} and I am a ${this.role}`
+	},
+}
+
+console.log(userTwo.sayHello())
