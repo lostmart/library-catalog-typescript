@@ -10,14 +10,14 @@ const bookOne: IBook = {
 }
 
 const bookTwo: IBook = {
-	id: 123,
+	id: getRandomNumber(100, 10000),
 	title: "hello world 2",
 	author: "Author two",
 	genre: Genre.Literature,
 }
 
 const userOne: IUser = {
-	id: 456,
+	id: getRandomNumber(100, 10000),
 	name: "Non",
 	borrowedBooks: [bookOne, bookTwo],
 }
@@ -27,7 +27,7 @@ function getRandomNumber(min: number, max: number): number {
 }
 
 // Usage
-const randomNumber = getRandomNumber(1, 10000)
-console.log(randomNumber)
+// const randomNumber = getRandomNumber(100, 10000)
+// console.log(randomNumber)
 
 console.log(userOne)
