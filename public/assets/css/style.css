@@ -40,6 +40,18 @@ input {
 	margin: auto;
 }
 
+.dark-bg::before {
+	content: "";
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	background-color: #00000094;
+	z-index: 1;
+	width: 100%;
+}
+
 .outer_container {
 	display: flex;
 	justify-content: space-between;
