@@ -7,28 +7,79 @@
 		<link rel="stylesheet" href="./assets/css/style.css" />
 	</head>
 	<body>
-		<nav class="navBar">
-			<a class="navBar__home" href="#">
-				<img
-					src="https://cdn-icons-png.flaticon.com/512/9720/9720379.png"
-					alt=""
-				/>
-			</a>
-			<ul>
-				<li>
-					<a href="#"><img src="./assets/img/home.svg" alt="" />Home</a>
-				</li>
-				<li>
-					<a href="#"><img src="./assets/img/book.svg" alt="" />Book</a>
-				</li>
-				<li>
-					<a href="#"><img src="./assets/img/book-open.svg" alt="" />Book</a>
-				</li>
-				<li>
-					<a href="#"><img src="./assets/img/heart.svg" alt="" />Favorites</a>
-				</li>
-			</ul>
-		</nav>
+		<div class="home-container">
+			<nav class="navBar">
+				<div>
+					<a class="navBar__home" href="#">
+						<img
+							src="https://cdn-icons-png.flaticon.com/512/9720/9720379.png"
+							alt=""
+						/>
+					</a>
+					<ul>
+						<li>
+							<a href="#"><img src="./assets/img/home.svg" alt="" />Home</a>
+						</li>
+						<li>
+							<a href="#"><img src="./assets/img/book.svg" alt="" />Book</a>
+						</li>
+						<li>
+							<a href="#"
+								><img src="./assets/img/book-open.svg" alt="" />Book</a
+							>
+						</li>
+						<li>
+							<a href="#"
+								><img src="./assets/img/heart.svg" alt="" />Favorites</a
+							>
+						</li>
+					</ul>
+				</div>
+
+				<div>
+					<hr />
+					<ul>
+						<li>
+							<a href="#"><img src="./assets/img/home.svg" alt="" />Home</a>
+						</li>
+					</ul>
+				</div>
+			</nav>
+			<main>
+				<header class="header">
+					<form>
+						<input type="text" placeholder="Seacr right now !!" />
+					</form>
+					<div class="header__notifications">
+						bell icon
+						<a href="#">
+							<img src="./assets/img/log-in.svg" alt="" />
+						</a>
+					</div>
+				</header>
+				<section class="recommended">
+					<div class="recommended__header">
+						<h2>Recommended</h2>
+						<a href="#">See All > </a>
+					</div>
+					<div class="recommended_booksContainer">
+						<article class="book">
+							<figure>
+								<img
+									src="https://m.media-amazon.com/images/I/81nV6x2ey4L._AC_UF1000,1000_QL80_.jpg"
+									alt=""
+								/>
+								<figcaption>
+									<h3>The Lord Of The Rings</h3>
+									<span>J.R.R. Tolkien</span>
+								</figcaption>
+							</figure>
+						</article>
+					</div>
+				</section>
+			</main>
+		</div>
+		<div id="app"></div>
 		<script type="module" src="./index.js"></script>
 	</body>
 </html>

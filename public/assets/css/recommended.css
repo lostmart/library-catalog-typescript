@@ -1,0 +1,37 @@
+.recommended {
+	padding: 1em;
+    background-color: white;
+    border-radius: 10px;
+    margin: 1em 0 1em 1em;
+}
+
+.recommended .recommended__header {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+
+.recommended .recommended_booksContainer{
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.recommended .book{
+	cursor: pointer;
+	transition: all 320ms ease-in-out;
+}
+
+.recommended .book h3{
+	transition: width 320ms ease-in-out;
+}
+
+
+.recommended .book:hover{
+	max-width: 320px;
+	box-shadow: 0 0 8px #b4b4b44f, 0 0 12px #b4b4b43a;
+}
+
+.recommended .book:hover h3{
+	width: 250px;
+}
