@@ -1,9 +1,9 @@
-import TestFc from "./TestFC"
+import NavBar from "./components/navBar"
 
 function App() {
 	return (
 		<>
-			<TestFc />
+			<NavBar />
 		</>
 	)
 }
