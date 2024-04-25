@@ -1,188 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>library</title>
-		<link rel="stylesheet" href="./assets/css/style.css" />
-	</head>
-	<body>
-		<div class="home-container">
-			<nav class="navBar hide">
-				<button class="navBar_hideBtn show-btn">
-					<span></span><span></span><span></span>
-				</button>
-				<div>
-					<a class="navBar__home" href="#">
-						<img
-							src="https://cdn-icons-png.flaticon.com/512/9720/9720379.png"
-							alt=""
-						/>
-					</a>
-					<ul>
-						<li>
-							<a href="#"><img src="./assets/img/home.svg" alt="" />Home</a>
-						</li>
-						<li>
-							<a href="#"><img src="./assets/img/book.svg" alt="" />Book</a>
-						</li>
-						<li>
-							<a href="#"
-								><img src="./assets/img/book-open.svg" alt="" />Book</a
-							>
-						</li>
-						<li>
-							<a href="#"
-								><img src="./assets/img/heart.svg" alt="" />Favorites</a
-							>
-						</li>
-					</ul>
-				</div>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
 
-				<div>
-					<hr />
-					<ul>
-						<li>
-							<a href="#"><img src="./assets/img/home.svg" alt="" />Home</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-			<main>
-				<header class="header">
-					<form>
-						<input type="text" placeholder="Seacr right now !!" />
-					</form>
-					<div class="header__notifications">
-						bell icon
-						<a href="#">
-							<img src="./assets/img/log-in.svg" alt="" />
-						</a>
-					</div>
-				</header>
-				<div class="outer_container">
-					<div>
-						<section class="recommended">
-							<div class="recommended__header">
-								<h2>Recommended</h2>
-								<a href="#">See All > </a>
-							</div>
-							<div class="recommended_booksContainer">
-								<article class="book">
-									<figure>
-										<img
-											src="https://m.media-amazon.com/images/I/81nV6x2ey4L._AC_UF1000,1000_QL80_.jpg"
-											alt=""
-										/>
-										<figcaption>
-											<h3>The Lord Of The Rings</h3>
-											<span>J.R.R. Tolkien</span>
-										</figcaption>
-									</figure>
-								</article>
-								<article class="book">
-									<figure>
-										<img
-											src="https://m.media-amazon.com/images/I/81nV6x2ey4L._AC_UF1000,1000_QL80_.jpg"
-											alt=""
-										/>
-										<figcaption>
-											<h3>The Lord Of The Rings</h3>
-											<span>J.R.R. Tolkien</span>
-										</figcaption>
-									</figure>
-								</article>
-								<article class="book">
-									<figure>
-										<img
-											src="https://m.media-amazon.com/images/I/81nV6x2ey4L._AC_UF1000,1000_QL80_.jpg"
-											alt=""
-										/>
-										<figcaption>
-											<h3>The Lord Of The Rings</h3>
-											<span>J.R.R. Tolkien</span>
-										</figcaption>
-									</figure>
-								</article>
-								<article class="book">
-									<figure>
-										<img
-											src="https://m.media-amazon.com/images/I/81nV6x2ey4L._AC_UF1000,1000_QL80_.jpg"
-											alt=""
-										/>
-										<figcaption>
-											<h3>The Lord Of The Rings</h3>
-											<span>J.R.R. Tolkien</span>
-										</figcaption>
-									</figure>
-								</article>
-							</div>
-						</section>
-						<section class="recommended">
-							<div class="recommended__header">
-								<h2>Recommended</h2>
-								<a href="#">See All > </a>
-							</div>
-							<div class="recommended_booksContainer">
-								<article class="book">
-									<figure>
-										<img
-											src="https://m.media-amazon.com/images/I/81nV6x2ey4L._AC_UF1000,1000_QL80_.jpg"
-											alt=""
-										/>
-										<figcaption>
-											<h3>The Lord Of The Rings</h3>
-											<span>J.R.R. Tolkien</span>
-										</figcaption>
-									</figure>
-								</article>
-								<article class="book">
-									<figure>
-										<img
-											src="https://m.media-amazon.com/images/I/81nV6x2ey4L._AC_UF1000,1000_QL80_.jpg"
-											alt=""
-										/>
-										<figcaption>
-											<h3>The Lord Of The Rings</h3>
-											<span>J.R.R. Tolkien</span>
-										</figcaption>
-									</figure>
-								</article>
-								<article class="book">
-									<figure>
-										<img
-											src="https://m.media-amazon.com/images/I/81nV6x2ey4L._AC_UF1000,1000_QL80_.jpg"
-											alt=""
-										/>
-										<figcaption>
-											<h3>The Lord Of The Rings</h3>
-											<span>J.R.R. Tolkien</span>
-										</figcaption>
-									</figure>
-								</article>
-								<article class="book">
-									<figure>
-										<img
-											src="https://m.media-amazon.com/images/I/81nV6x2ey4L._AC_UF1000,1000_QL80_.jpg"
-											alt=""
-										/>
-										<figcaption>
-											<h3>The Lord Of The Rings</h3>
-											<span>J.R.R. Tolkien</span>
-										</figcaption>
-									</figure>
-								</article>
-							</div>
-						</section>
-					</div>
-					<section class="info_secton">
-						<h2>Lord of the rings</h2>
-					</section>
-				</div>
-			</main>
-		</div>
-		<div id="app"></div>
-		<script src="./js/site-behavior.js"></script>
-		<script type="module" src="./index.js"></script>
-	</body>
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+    -->
+  </body>
 </html>
