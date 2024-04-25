@@ -1,1 +1,12 @@
-@import url("./sass/base/_reset.scss");
+@import "./sass/abstracts/variables";
+@import "./sass/base/typography";
+@import "./sass/base/reset";
+@import "./sass/layout/navbar";
+
+// @import 'abstracts/variables';
+
+.home-container {
+	display: flex;
+	max-width: 1280px;
+	margin: auto;
+}
